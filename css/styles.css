@@ -1,0 +1,16 @@
+/* Colors - Global Variables  */
+:root {
+  --primary-color: #48cae4;
+  --secondary-color: #0096c7;
+  --accent-color: #ade8f4;
+  --headings-color: #1b0760;
+  --body-color: #918ca4;
+  --body-dark-color: #5c5577;
+  --border-color: #ccc;
+}
+
+*,
+**before,
+**after {
+  box-sizing: border-box;
+}
