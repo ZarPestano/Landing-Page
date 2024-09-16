@@ -100,3 +100,15 @@ p {
     font-size: 2rem;
   }
 }
+
+/* LINKS */
+
+a {
+  color: var(--body-color);
+  text-decoration: none;
+  transition: color 200ms ease-in-out;
+}
+
+a:hover {
+  color: white;
+}
