@@ -1,0 +1,35 @@
+<div class="collapsible navbar">
+  <a href="/"><button class="btn btn--secondary">Resume</button></a>
+  <svg
+    class="icon icon--primary navbar__toggler"
+    xmlns="http://www.w3.org/2000/svg"
+    height="48px"
+    viewBox="0 -960 960 960"
+    width="48px"
+    fill="#5f6368"
+  >
+    <path
+      d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"
+    />
+  </svg>
+  <ul class="collapsible__content navbar__list list list--inline">
+    <li class="navbar__item list__item">
+      <a href="#">Home</a>
+    </li>
+    <li class="navbar__item list__item">
+      <a href="#">About</a>
+    </li>
+    <li class="navbar__item list__item">
+      <a href="#">Projects</a>
+    </li>
+    <li class="navbar__item list__item">
+      <a href="#">Skills</a>
+    </li>
+    <li class="navbar__item list__item">
+      <a href="#">Experiences</a>
+    </li>
+    <li class="navbar__item list__item">
+      <a href="#">Contact</a>
+    </li>
+  </ul>
+</div>
