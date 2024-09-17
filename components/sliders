@@ -1,0 +1,14 @@
+<div class="slider-container">
+  <div class="slider-info">
+    <label class="slider-label" for="HTML">HTML</label>
+    <output class="slider-output">85</output>
+  </div>
+  <input
+    class="slider slider--primary"
+    id="HTML"
+    type="range"
+    value="85"
+    min="1"
+    max="100"
+  />
+</div>

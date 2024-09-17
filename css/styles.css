@@ -257,3 +257,38 @@ a:hover {
   margin-top: 2rem;
   width: 80%;
 }
+
+/* SLIDERS */
+
+.slider-container {
+  padding: 0.5rem;
+}
+
+.slider-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider {
+  width: 100%;
+  pointer-events: none;
+}
+
+.slider--primary {
+  accent-color: var(--primary-color);
+}
+
+.slider:focus,
+.slider:hover {
+  pointer-events: none;
+}
+
+.slider::-webkit-slider-thumb {
+  opacity: 0;
+}
+.slider::-moz-range-thumb {
+  opacity: 0;
+}
+.slider::-ms-thumb {
+  opacity: 0;
+}
