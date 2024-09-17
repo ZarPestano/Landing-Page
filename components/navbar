@@ -1,0 +1,23 @@
+<div class="navbar">
+  <a href="/"><button class="btn btn--secondary">Resume</button></a>
+  <ul class="navbar__list list list--inline">
+    <li class="navbar__item list__item">
+      <a href="#">Home</a>
+    </li>
+    <li class="navbar__item list__item">
+      <a href="#">About</a>
+    </li>
+    <li class="navbar__item list__item">
+      <a href="#">Projects</a>
+    </li>
+    <li class="navbar__item list__item">
+      <a href="#">Skills</a>
+    </li>
+    <li class="navbar__item list__item">
+      <a href="#">Experiences</a>
+    </li>
+    <li class="navbar__item list__item">
+      <a href="#">Contact</a>
+    </li>
+  </ul>
+</div>

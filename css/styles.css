@@ -342,3 +342,22 @@ a:hover {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+/* NAVIGATION BAR */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.navbar > .btn {
+  padding: 0.75rem 3rem;
+  border-radius: 5px;
+}
+
+.navbar__list {
+  display: flex;
+  align-items: center;
+}
