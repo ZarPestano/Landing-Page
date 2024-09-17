@@ -1,0 +1,9 @@
+<div class="grid grid--1x2">
+  <div style="border: 1px solid red; height: 200px"></div>
+  <div style="border: 1px solid red; height: 200px"></div>
+</div>
+<div class="grid grid--1x3">
+  <div style="border: 1px solid red; height: 200px"></div>
+  <div style="border: 1px solid red; height: 200px"></div>
+  <div style="border: 1px solid red; height: 200px"></div>
+</div>
