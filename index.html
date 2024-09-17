@@ -7,8 +7,33 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <button class="btn btn--primary">Primary</button>
-    <button class="btn btn--secondary">Secondary</button>
-    <button class="btn btn--accent">Accent</button>
+    <form class="input-group" action="">
+      <input
+        type="text"
+        class="input"
+        required
+        minlength="3"
+        maxlength="20"
+        placeholder="Name"
+        id="name"
+      />
+      <input
+        type="email"
+        class="input"
+        required
+        minlength="3"
+        maxlength="20"
+        placeholder="Email"
+        id="email"
+      />
+      <textarea
+        class="textarea"
+        name="message"
+        rows="4"
+        id="message"
+        placeholder="Enter message here..."
+      ></textarea>
+      <button class="btn btn--primary">Send Message</button>
+    </form>
   </body>
 </html>
