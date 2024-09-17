@@ -292,3 +292,36 @@ a:hover {
 .slider::-ms-thumb {
   opacity: 0;
 }
+
+/* SPINNERS */
+
+.ring {
+  margin: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: fit-content;
+  /* border: 1px solid red; */
+}
+
+.ring-percentage {
+  --size: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: #222;
+  width: calc(var(--size) * 1px);
+  height: calc(var(--size) * 1px);
+  border-radius: 50%;
+  border-top: calc(var(--size) * 0.075px) solid var(--secondary-color);
+  border-bottom: calc(var(--size) * 0.075px) solid var(--secondary-color);
+  border-left: calc(var(--size) * 0.075px) solid var(--accent-color);
+  border-right: calc(var(--size) * 0.075px) solid var(--accent-color);
+}
+
+.ring-label {
+  margin: 0;
+}
