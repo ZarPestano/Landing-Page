@@ -1,0 +1,23 @@
+<div class="projects">
+  <h2 class="projects-heading">Featured Projects</h2>
+  <div class="project-grid grid">
+    <span class="project-arrow previous-arrow"><</span>
+    <img
+      class="project-image"
+      src="./images/sample-web-page-cropped.png"
+      alt=""
+    />
+    <div class="project-content">
+      <h4 class="project-category project-category-primary">Web Design</h4>
+      <h2 class="project-title">Project Title</h2>
+      <h4 class="project-involvement">Design & Development</h4>
+      <p class="project-description">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
+        inventore voluptatem tempora illo soluta quo ut perferendis minima, fuga
+        dolorum.
+      </p>
+      <button class="btn btn--primary">View Details</button>
+    </div>
+    <span class="project-arrow next-arrow">></span>
+  </div>
+</div>
