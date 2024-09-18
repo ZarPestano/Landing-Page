@@ -1,0 +1,37 @@
+<div class="about">
+  <div class="grid grid--1x2">
+    <img
+      class="about-image"
+      src="./images/workingMan.png"
+      alt="A working man"
+    />
+    <div class="about-content">
+      <h2 class="about-heading">About Me</h2>
+      <p class="about-description">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex modi aut
+        ipsa nihil dolores accusantium a blanditiis eaque temporibus distinctio!
+      </p>
+      <ul class="about-badges list list--inline">
+        <li class="about-list-item list__item">
+          <span class="about-badge badge badge--primary">HTML</span>
+        </li>
+        <li class="about-list-item list__item">
+          <span class="about-badge badge badge--primary">CSS</span>
+        </li>
+        <li class="about-list-item list__item">
+          <span class="about-badge badge badge--primary">JavaScript</span>
+        </li>
+        <li class="about-list-item list__item">
+          <span class="about-badge badge badge--primary">TypeScript</span>
+        </li>
+        <li class="about-list-item list__item">
+          <span class="about-badge badge badge--primary">React</span>
+        </li>
+        <li class="about-list-item list__item">
+          <span class="about-badge badge badge--primary">Git</span>
+        </li>
+      </ul>
+      <button class="about-btn btn btn--primary">Download CV</button>
+    </div>
+  </div>
+</div>
