@@ -1,0 +1,80 @@
+<div class="experiences">
+  <div class="grid grid--1x2">
+    <div class="education grid">
+      <h2 class="education-heading">Education</h2>
+      <div class="education-content">
+        <div class="education-card card">
+          <h3 class="education-field">
+            Mechanical Engineering From
+            <span class="heading--primary">BCIT</span>
+          </h3>
+          <h5 class="education-year heading--primary">2015 - 2019</h5>
+          <p class="education-description">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+            veritatis mollitia, dolor voluptatibus tenetur quasi?
+          </p>
+        </div>
+        <div class="education-card card">
+          <h3 class="education-field">
+            Mechanical Engineering From
+            <span class="heading--primary">BCIT</span>
+          </h3>
+          <h5 class="education-year heading--primary">2015 - 2019</h5>
+          <p class="education-description">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+            veritatis mollitia, dolor voluptatibus tenetur quasi?
+          </p>
+        </div>
+        <div class="education-card card">
+          <h3 class="education-field">
+            Mechanical Engineering From
+            <span class="heading--primary">BCIT</span>
+          </h3>
+          <h5 class="education-year heading--primary">2015 - 2019</h5>
+          <p class="education-description">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+            veritatis mollitia, dolor voluptatibus tenetur quasi?
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="work grid">
+      <h2 class="work-heading">Work Experience</h2>
+      <div class="work-content">
+        <div class="work-card card">
+          <h3 class="work-role">
+            Web Developer From
+            <span class="heading--primary">Company XYZ</span>
+          </h3>
+          <h5 class="work-year heading--primary">20XX - 20XX</h5>
+          <p class="work-description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
+            mollitia nihil ullam magnam, exercitationem ducimus.
+          </p>
+        </div>
+        <div class="work-card card">
+          <h3 class="work-role">
+            Web Developer From
+            <span class="heading--primary">Company XYZ</span>
+          </h3>
+          <h5 class="work-year heading--primary">20XX - 20XX</h5>
+          <p class="work-description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
+            mollitia nihil ullam magnam, exercitationem ducimus.
+          </p>
+        </div>
+        <div class="work-card card">
+          <h3 class="work-role">
+            Web Developer From
+            <span class="heading--primary">Company XYZ</span>
+          </h3>
+          <h5 class="work-year heading--primary">20XX - 20XX</h5>
+          <p class="work-description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
+            mollitia nihil ullam magnam, exercitationem ducimus.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

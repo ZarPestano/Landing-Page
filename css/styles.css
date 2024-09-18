@@ -628,3 +628,39 @@ a:hover {
   width: 100%;
   height: 100%;
 }
+
+/* Experiences */
+
+.experience {
+  margin: 1rem;
+}
+
+.education,
+.work {
+  grid-template-rows: max-content 1fr;
+}
+
+.education-heading,
+.work-heading {
+  text-align: center;
+}
+
+.education-content,
+.work-content {
+  margin: 1rem;
+}
+
+.education-card,
+.work-card {
+  margin: 3rem 2rem;
+}
+
+.education-year,
+.work-year {
+  margin: 1rem 0;
+}
+
+.education-description,
+.work-description {
+  margin-bottom: 0;
+}
