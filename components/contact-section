@@ -1,0 +1,57 @@
+<div class="contact">
+  <h2 class="contact-heading">Contact Me</h2>
+  <div class="contact-grid grid grid--1x2">
+    <div class="contact-info">
+      <div class="contact-card card">
+        <h5 class="contact-title">Address</h5>
+        <p class="contact-description">123 Smith St.</p>
+        <p class="contact-description">Vancouver, BC 1A2 B3C</p>
+      </div>
+      <div class="contact-card card">
+        <h5 class="contact-title">Email</h5>
+        <p class="contact-description">myemail@hotmail.com</p>
+      </div>
+      <div class="contact-card card">
+        <h5 class="contact-title">Phone</h5>
+        <p class="contact-description">(123) 456-7890</p>
+      </div>
+    </div>
+    <form class="input-group" action="">
+      <input
+        type="text"
+        class="input"
+        required
+        minlength="3"
+        maxlength="20"
+        placeholder="First Name"
+        id="firstName"
+      />
+      <input
+        type="text"
+        class="input"
+        required
+        minlength="3"
+        maxlength="20"
+        placeholder="Last Name"
+        id="lastName"
+      />
+      <input
+        type="email"
+        class="input"
+        required
+        minlength="3"
+        maxlength="20"
+        placeholder="Email"
+        id="email"
+      />
+      <textarea
+        class="textarea"
+        name="message"
+        rows="10"
+        id="message"
+        placeholder="Enter message here..."
+      ></textarea>
+      <button class="btn btn--primary">Send Message</button>
+    </form>
+  </div>
+</div>
