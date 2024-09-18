@@ -480,3 +480,12 @@ a:hover {
   display: inline-block;
   margin: 0.5rem 0;
 }
+
+/* CARDS */
+
+.card {
+  height: auto-fit;
+  max-width: 50vw;
+  padding: 2rem;
+  box-shadow: -10px -10px 25px 10px #111;
+}
