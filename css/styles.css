@@ -489,3 +489,27 @@ a:hover {
   padding: 2rem;
   box-shadow: -10px -10px 25px 10px #111;
 }
+
+/* FIELDS */
+
+.fields-heading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.field-card {
+  margin: 0 2rem;
+  border-radius: 5px;
+}
+
+.field-icon {
+  margin: 0;
+}
+
+.field-title {
+  margin: 1.5rem 0;
+}
+
+.field-description {
+  margin-bottom: 0;
+}
