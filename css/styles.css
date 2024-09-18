@@ -418,3 +418,43 @@ a:hover {
     opacity: 1;
   }
 }
+
+/* HERO */
+.hero-content {
+  margin: 2rem auto;
+}
+
+.hero-btn {
+  border-bottom-left-radius: 0;
+}
+
+.hero-image {
+  border-radius: 50%;
+  margin: 0 auto;
+  align-self: center;
+}
+
+.hero-name,
+.hero-title {
+  margin-top: 1rem;
+}
+
+.hero-email-wrapper,
+.hero-phone-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.hero-email,
+.hero-phone {
+  display: inline-block;
+  margin: 0;
+  margin-left: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-content {
+    margin: 0;
+    margin-left: 1rem;
+  }
+}
