@@ -1,0 +1,6 @@
+    <div class="callout">
+      <h2 class="callout-heading">Interested to Work?</h2>
+      <p class="callout-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta harum magnam quasi iste, ex voluptates molestias recusandae laudantium culpa dolorem?</p>
+      <Button class="callout-btn btn btn--primary">Contact</Button>
+      </div>
+    </div>

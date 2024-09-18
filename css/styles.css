@@ -664,3 +664,10 @@ a:hover {
 .work-description {
   margin-bottom: 0;
 }
+
+/* CALLOUT */
+
+.callout-btn {
+  font-size: 2.4rem;
+  margin: 2rem 0;
+}
