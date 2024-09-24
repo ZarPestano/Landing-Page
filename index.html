@@ -14,62 +14,499 @@
     <script defer src="js/script.js"></script>
   </head>
   <body>
-    <div class="contact">
-      <h2 class="contact-heading">Contact Me</h2>
-      <div class="contact-grid grid grid--1x2">
-        <div class="contact-info">
-          <div class="contact-card card">
-            <h5 class="contact-title">Address</h5>
-            <p class="contact-description">123 Smith St.</p>
-            <p class="contact-description">Vancouver, BC 1A2 B3C</p>
-          </div>
-          <div class="contact-card card">
-            <h5 class="contact-title">Email</h5>
-            <p class="contact-description">myemail@hotmail.com</p>
-          </div>
-          <div class="contact-card card">
-            <h5 class="contact-title">Phone</h5>
-            <p class="contact-description">(123) 456-7890</p>
+    <section class="block">
+      <div class="collapsible navbar">
+        <a href="/"><button class="btn btn--secondary">Resume</button></a>
+        <svg
+          class="icon icon--primary navbar__toggler"
+          xmlns="http://www.w3.org/2000/svg"
+          height="48px"
+          viewBox="0 -960 960 960"
+          width="48px"
+          fill="#5f6368"
+        >
+          <path
+            d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"
+          />
+        </svg>
+        <ul class="collapsible__content navbar__list list list--inline">
+          <li class="navbar__item list__item">
+            <a href="#">Home</a>
+          </li>
+          <li class="navbar__item list__item">
+            <a href="#">About</a>
+          </li>
+          <li class="navbar__item list__item">
+            <a href="#">Projects</a>
+          </li>
+          <li class="navbar__item list__item">
+            <a href="#">Skills</a>
+          </li>
+          <li class="navbar__item list__item">
+            <a href="#">Experiences</a>
+          </li>
+          <li class="navbar__item list__item">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="block">
+      <div class="hero">
+        <div class="grid grid--1x2">
+          <img
+            class="hero-image"
+            src="https://picsum.photos/300.webp?=random"
+            alt=""
+          />
+          <div class="hero-content">
+            <button class="hero-btn btn btn--primary">Hello I'm</button>
+            <h1 class="hero-name">Zar Pestano</h1>
+            <h3 class="hero-title">Web Developper</h3>
+            <div class="hero-email-wrapper">
+              <svg
+                class="icon icon--primary"
+                xmlns="http://www.w3.org/2000/svg"
+                height="48px"
+                viewBox="0 -960 960 960"
+                width="48px"
+                fill="#5f6368"
+              >
+                <path
+                  d="M140-160q-24 0-42-18t-18-42v-520q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H140Zm340-302L140-685v465h680v-465L480-462Zm0-60 336-218H145l335 218ZM140-685v-55 520-465Z"
+                />
+              </svg>
+              <p class="hero-email">myemail@hotmail.com</p>
+            </div>
+            <div class="hero-phone-wrapper">
+              <svg
+                class="icon icon--primary"
+                xmlns="http://www.w3.org/2000/svg"
+                height="48px"
+                viewBox="0 -960 960 960"
+                width="48px"
+                fill="#5f6368"
+              >
+                <path
+                  d="M795-120q-116 0-236.5-56T335-335Q232-438 176-558.5T120-795q0-19.29 12.86-32.14Q145.71-840 165-840h140q14 0 24 10t14 25l26.93 125.64Q372-665 369.5-653.5t-10.73 19.73L259-533q26 44 55 82t64 72q37 38 78 69.5t86 55.5l95-98q10-11 23.15-15 13.15-4 25.85-2l119 26q15 4 25 16.04 10 12.05 10 26.96v135q0 19.29-12.86 32.14Q814.29-120 795-120ZM229-588l81-82-23-110H180q2 42 13.5 88.5T229-588Zm369 363q41 19 89 31t93 14v-107l-103-21-79 83ZM229-588Zm369 363Z"
+                />
+              </svg>
+              <p class="hero-phone">123-456-7890</p>
+            </div>
           </div>
         </div>
-        <form class="input-group" action="">
-          <input
-            type="text"
-            class="input"
-            required
-            minlength="3"
-            maxlength="20"
-            placeholder="First Name"
-            id="firstName"
-          />
-          <input
-            type="text"
-            class="input"
-            required
-            minlength="3"
-            maxlength="20"
-            placeholder="Last Name"
-            id="lastName"
-          />
-          <input
-            type="email"
-            class="input"
-            required
-            minlength="3"
-            maxlength="20"
-            placeholder="Email"
-            id="email"
-          />
-          <textarea
-            class="textarea"
-            name="message"
-            rows="10"
-            id="message"
-            placeholder="Enter message here..."
-          ></textarea>
-          <button class="btn btn--primary">Send Message</button>
-        </form>
       </div>
-    </div>
+    </section>
+    <section class="block">
+      <div class="about">
+        <div class="grid grid--1x2">
+          <img
+            class="about-image"
+            src="./images/workingMan.png"
+            alt="A working man"
+          />
+          <div class="about-content">
+            <h2 class="about-heading">About Me</h2>
+            <p class="about-description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex modi
+              aut ipsa nihil dolores accusantium a blanditiis eaque temporibus
+              distinctio!
+            </p>
+            <ul class="about-badges list list--inline">
+              <li class="about-list-item list__item">
+                <span class="about-badge badge badge--primary">HTML</span>
+              </li>
+              <li class="about-list-item list__item">
+                <span class="about-badge badge badge--primary">CSS</span>
+              </li>
+              <li class="about-list-item list__item">
+                <span class="about-badge badge badge--primary">JavaScript</span>
+              </li>
+              <li class="about-list-item list__item">
+                <span class="about-badge badge badge--primary">TypeScript</span>
+              </li>
+              <li class="about-list-item list__item">
+                <span class="about-badge badge badge--primary">React</span>
+              </li>
+              <li class="about-list-item list__item">
+                <span class="about-badge badge badge--primary">Git</span>
+              </li>
+            </ul>
+            <button class="about-btn btn btn--primary">Download CV</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="block">
+      <div class="fields">
+        <h2 class="fields-heading">What I do</h2>
+        <div class="grid grid--1x3">
+          <div class="field-card card">
+            <svg
+              class="field-icon icon icon--secondary"
+              xmlns="http://www.w3.org/2000/svg"
+              height="48px"
+              viewBox="0 -960 960 960"
+              width="48px"
+              fill="#5f6368"
+            >
+              <path
+                d="M140-160q-24 0-42-18t-18-42v-520q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H140Zm0-60h461v-163H140v163Zm521 0h159v-386H661v386ZM140-443h461v-163H140v163Z"
+              />
+            </svg>
+            <h3 class="field-title">Web Development</h3>
+            <p class="field-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              corrupti omnis blanditiis, perspiciatis asperiores quae cumque!
+              Quaerat ipsa molestias quae!
+            </p>
+          </div>
+          <div class="field-card card">
+            <svg
+              class="field-icon icon icon--secondary"
+              xmlns="http://www.w3.org/2000/svg"
+              height="48px"
+              viewBox="0 -960 960 960"
+              width="48px"
+              fill="#5f6368"
+            >
+              <path
+                d="M140-160q-24 0-42-18t-18-42v-520q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H140Zm0-60h461v-163H140v163Zm521 0h159v-386H661v386ZM140-443h461v-163H140v163Z"
+              />
+            </svg>
+            <h3 class="field-title">Web Development</h3>
+            <p class="field-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              corrupti omnis blanditiis, perspiciatis asperiores quae cumque!
+              Quaerat ipsa molestias quae!
+            </p>
+          </div>
+          <div class="field-card card">
+            <svg
+              class="field-icon icon icon--secondary"
+              xmlns="http://www.w3.org/2000/svg"
+              height="48px"
+              viewBox="0 -960 960 960"
+              width="48px"
+              fill="#5f6368"
+            >
+              <path
+                d="M140-160q-24 0-42-18t-18-42v-520q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H140Zm0-60h461v-163H140v163Zm521 0h159v-386H661v386ZM140-443h461v-163H140v163Z"
+              />
+            </svg>
+            <h3 class="field-title">Web Development</h3>
+            <p class="field-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              corrupti omnis blanditiis, perspiciatis asperiores quae cumque!
+              Quaerat ipsa molestias quae!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="block">
+      <div class="projects">
+        <h2 class="projects-heading">Featured Projects</h2>
+        <div class="project-grid grid">
+          <span class="project-arrow previous-arrow"><</span>
+          <img
+            class="project-image"
+            src="./images/sample-web-page-cropped.png"
+            alt=""
+          />
+          <div class="project-content">
+            <h4 class="project-category project-category-primary">
+              Web Design
+            </h4>
+            <h2 class="project-title">Project Title</h2>
+            <h4 class="project-involvement">Design & Development</h4>
+            <p class="project-description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
+              inventore voluptatem tempora illo soluta quo ut perferendis
+              minima, fuga dolorum.
+            </p>
+            <button class="btn btn--primary">View Details</button>
+          </div>
+          <span class="project-arrow next-arrow">></span>
+        </div>
+      </div>
+    </section>
+    <section class="block">
+      <div class="skills">
+        <div class="grid grid--1x2">
+          <div class="technical">
+            <h2 class="technical-heading">Techanical Skills</h2>
+            <div class="technical-content">
+              <div class="slider-container">
+                <div class="slider-info">
+                  <label class="slider-label" for="html">HTML</label>
+                  <output class="slider-output">85</output>
+                </div>
+                <input
+                  class="slider slider--primary"
+                  id="html"
+                  type="range"
+                  value="85"
+                  min="1"
+                  max="100"
+                />
+              </div>
+              <div class="slider-container">
+                <div class="slider-info">
+                  <label class="slider-label" for="css">CSS</label>
+                  <output class="slider-output">85</output>
+                </div>
+                <input
+                  class="slider slider--primary"
+                  id="CSS"
+                  type="range"
+                  value="85"
+                  min="1"
+                  max="100"
+                />
+              </div>
+              <div class="slider-container">
+                <div class="slider-info">
+                  <label class="slider-label" for="javascript"
+                    >JavaScript</label
+                  >
+                  <output class="slider-output">50</output>
+                </div>
+                <input
+                  class="slider slider--primary"
+                  id="javascript"
+                  type="range"
+                  value="50"
+                  min="1"
+                  max="100"
+                />
+              </div>
+              <div class="slider-container">
+                <div class="slider-info">
+                  <label class="slider-label" for="typescript"
+                    >TypeScript</label
+                  >
+                  <output class="slider-output">50</output>
+                </div>
+                <input
+                  class="slider slider--primary"
+                  id="typescript"
+                  type="range"
+                  value="50"
+                  min="1"
+                  max="100"
+                />
+              </div>
+              <div class="slider-container">
+                <div class="slider-info">
+                  <label class="slider-label" for="react">React</label>
+                  <output class="slider-output">50</output>
+                </div>
+                <input
+                  class="slider slider--primary"
+                  id="react"
+                  type="range"
+                  value="50"
+                  min="1"
+                  max="100"
+                />
+              </div>
+              <div class="slider-container">
+                <div class="slider-info">
+                  <label class="slider-label" for="git">Git</label>
+                  <output class="slider-output">85</output>
+                </div>
+                <input
+                  class="slider slider--primary"
+                  id="git"
+                  type="range"
+                  value="85"
+                  min="1"
+                  max="100"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="professional">
+            <h2 class="professional-heading">Professional Skills</h2>
+            <div class="professional-content">
+              <div class="professional-grid grid">
+                <div class="ring">
+                  <p class="ring-percentage">85%</p>
+                  <p class="ring-label">Communication</p>
+                </div>
+                <div class="ring">
+                  <p class="ring-percentage">65%</p>
+                  <p class="ring-label">Teamwork</p>
+                </div>
+                <div class="ring">
+                  <p class="ring-percentage">85%</p>
+                  <p class="ring-label">Problem-Solving</p>
+                </div>
+                <div class="ring">
+                  <p class="ring-percentage">60%</p>
+                  <p class="ring-label">Creativity</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="block">
+      <div class="experiences">
+        <div class="grid grid--1x2">
+          <div class="education grid">
+            <h2 class="education-heading">Education</h2>
+            <div class="education-content">
+              <div class="education-card card">
+                <h3 class="education-field">
+                  Mechanical Engineering From
+                  <span class="heading--primary">BCIT</span>
+                </h3>
+                <h5 class="education-year heading--primary">2015 - 2019</h5>
+                <p class="education-description">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptates veritatis mollitia, dolor voluptatibus tenetur
+                  quasi?
+                </p>
+              </div>
+              <div class="education-card card">
+                <h3 class="education-field">
+                  Mechanical Engineering From
+                  <span class="heading--primary">BCIT</span>
+                </h3>
+                <h5 class="education-year heading--primary">2015 - 2019</h5>
+                <p class="education-description">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptates veritatis mollitia, dolor voluptatibus tenetur
+                  quasi?
+                </p>
+              </div>
+              <div class="education-card card">
+                <h3 class="education-field">
+                  Mechanical Engineering From
+                  <span class="heading--primary">BCIT</span>
+                </h3>
+                <h5 class="education-year heading--primary">2015 - 2019</h5>
+                <p class="education-description">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptates veritatis mollitia, dolor voluptatibus tenetur
+                  quasi?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="work grid">
+            <h2 class="work-heading">Work Experience</h2>
+            <div class="work-content">
+              <div class="work-card card">
+                <h3 class="work-role">
+                  Web Developer From
+                  <span class="heading--primary">Company XYZ</span>
+                </h3>
+                <h5 class="work-year heading--primary">20XX - 20XX</h5>
+                <p class="work-description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ipsam mollitia nihil ullam magnam, exercitationem ducimus.
+                </p>
+              </div>
+              <div class="work-card card">
+                <h3 class="work-role">
+                  Web Developer From
+                  <span class="heading--primary">Company XYZ</span>
+                </h3>
+                <h5 class="work-year heading--primary">20XX - 20XX</h5>
+                <p class="work-description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ipsam mollitia nihil ullam magnam, exercitationem ducimus.
+                </p>
+              </div>
+              <div class="work-card card">
+                <h3 class="work-role">
+                  Web Developer From
+                  <span class="heading--primary">Company XYZ</span>
+                </h3>
+                <h5 class="work-year heading--primary">20XX - 20XX</h5>
+                <p class="work-description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ipsam mollitia nihil ullam magnam, exercitationem ducimus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="block">
+      <div class="callout">
+        <h2 class="callout-heading">Interested to Work?</h2>
+        <p class="callout-text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta harum
+          magnam quasi iste, ex voluptates molestias recusandae laudantium culpa
+          dolorem?
+        </p>
+        <button class="callout-btn btn btn--primary">Contact</button>
+      </div>
+    </section>
+    <section class="block">
+      <div class="contact">
+        <h2 class="contact-heading">Contact Me</h2>
+        <div class="contact-grid grid grid--1x2">
+          <div class="contact-info">
+            <div class="contact-card card">
+              <h5 class="contact-title">Address</h5>
+              <p class="contact-description">123 Smith St.</p>
+              <p class="contact-description">Vancouver, BC 1A2 B3C</p>
+            </div>
+            <div class="contact-card card">
+              <h5 class="contact-title">Email</h5>
+              <p class="contact-description">myemail@hotmail.com</p>
+            </div>
+            <div class="contact-card card">
+              <h5 class="contact-title">Phone</h5>
+              <p class="contact-description">(123) 456-7890</p>
+            </div>
+          </div>
+          <form class="input-group" action="">
+            <input
+              type="text"
+              class="input"
+              required
+              minlength="3"
+              maxlength="20"
+              placeholder="First Name"
+              id="firstName"
+            />
+            <input
+              type="text"
+              class="input"
+              required
+              minlength="3"
+              maxlength="20"
+              placeholder="Last Name"
+              id="lastName"
+            />
+            <input
+              type="email"
+              class="input"
+              required
+              minlength="3"
+              maxlength="20"
+              placeholder="Email"
+              id="email"
+            />
+            <textarea
+              class="textarea"
+              name="message"
+              rows="10"
+              id="message"
+              placeholder="Enter message here..."
+            ></textarea>
+            <button class="btn btn--primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
