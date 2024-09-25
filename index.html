@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script defer src="js/script.js"></script>
   </head>
   <body>
@@ -98,11 +99,12 @@
     <section class="block about">
       <div class="grid grid--1x2">
         <img
+          data-aos="fade-up"
           class="about-image"
           src="./images/workingMan.png"
           alt="A working man"
         />
-        <div class="about-content">
+        <div class="about-content" data-aos="fade-left">
           <h2 class="about-heading">About Me</h2>
           <p class="about-description">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex modi
@@ -133,7 +135,7 @@
         </div>
       </div>
     </section>
-    <section class="block fields">
+    <section class="block fields" data-aos="fade-up">
       <h2 class="fields-heading">What I do</h2>
       <div class="grid grid--1x3">
         <div class="field-card card">
@@ -198,7 +200,7 @@
         </div>
       </div>
     </section>
-    <section class="block projects">
+    <section class="block projects" data-aos="flip-up">
       <h2 class="projects-heading">Featured Projects</h2>
       <div class="project-grid grid">
         <span class="project-arrow previous-arrow"><</span>
@@ -225,7 +227,7 @@
     </section>
     <section class="block skills">
       <div class="grid grid--1x2">
-        <div class="skills-grid grid">
+        <div class="skills-grid grid" data-aos="fade-right">
           <h2 class="skills-heading">Techanical Skills</h2>
           <div class="skills-content">
             <div class="slider-container">
@@ -314,7 +316,7 @@
             </div>
           </div>
         </div>
-        <div class="skills-grid">
+        <div class="skills-grid" data-aos="fade-left">
           <h2 class="skills-heading">Professional Skills</h2>
           <div class="skills-content">
             <div class="skills-quadrant grid">
@@ -341,7 +343,7 @@
     </section>
     <section class="block experiences">
       <div class="grid grid--1x2">
-        <div class="experience-grid grid">
+        <div class="experience-grid grid" data-aos="fade-down">
           <h2 class="experience-heading">Education</h2>
           <div class="experience-content-grid grid">
             <div class="experience-card card">
@@ -379,7 +381,7 @@
             </div>
           </div>
         </div>
-        <div class="experience-grid grid">
+        <div class="experience-grid grid" data-aos="fade-down">
           <h2 class="experience-heading">Work Experience</h2>
           <div class="experience-content-grid grid">
             <div class="experience-card card">
@@ -484,6 +486,10 @@
           <button class="btn btn--primary">Send Message</button>
         </form>
       </div>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
     </section>
   </body>
 </html>
