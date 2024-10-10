@@ -25,7 +25,7 @@
   <body>
     <section class="block collapsible navbar">
       <a href="/"
-        ><button class="navbar-btn btn btn--secondary">Resume</button></a
+        ><button class="navbar-btn btn btn--secondary">EP Portfolio</button></a
       >
       <svg
         class="icon icon--primary navbar__toggler"
@@ -135,7 +135,12 @@
               <span class="about-badge badge badge--primary">Git</span>
             </li>
           </ul>
-          <button class="about-btn btn btn--primary">Download CV</button>
+          <a
+            href="/resume/Resume - Eleazar Pestano.pdf"
+            download="Resume - Eleazar Pestano.pdf"
+          >
+            <button class="about-btn btn btn--primary">Download Resume</button>
+          </a>
         </div>
       </div>
     </section>
@@ -207,26 +212,85 @@
     <section class="block projects" id="projects" data-aos="fade-down">
       <h2 class="projects-heading">Featured Projects</h2>
       <div class="project-grid grid">
-        <span class="project-arrow previous-arrow"><</span>
-        <a href="#">
-          <img
-            class="project-image"
-            src="./images/sample-web-page-cropped.png"
-            alt=""
-          />
-        </a>
-        <div class="project-content">
-          <h4 class="project-category project-category-primary">Web Design</h4>
-          <h2 class="project-title">Project Title</h2>
-          <h4 class="project-involvement">Design & Development</h4>
-          <p class="project-description">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
-            inventore voluptatem tempora illo soluta quo ut perferendis minima,
-            fuga dolorum.
-          </p>
-          <button class="btn btn--primary">View Details</button>
+        <span id="previous-arrow" class="project-arrow previous-arrow"><</span>
+        <div class="project-container">
+          <div class="project-group project-active">
+            <a href="https://moshifywebproject.netlify.app/" target="_blank">
+              <img
+                class="project-image"
+                src="./images/moshifywebproject-cropped-1000x563.png"
+                alt=""
+              />
+            </a>
+            <div class="project-content">
+              <h4 class="project-category project-category-primary">
+                Web Design
+              </h4>
+              <h2 class="project-title">Moshified Web Project</h2>
+              <h4 class="project-involvement">Design & Development</h4>
+              <p class="project-description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
+                inventore voluptatem tempora illo soluta quo ut perferendis
+                minima, fuga dolorum.
+              </p>
+              <a href="https://moshifywebproject.netlify.app/" target="_blank">
+                <button class="btn btn--primary">View Details</button>
+              </a>
+            </div>
+          </div>
+          <div class="project-group">
+            <a href="https://asteroidsgameproject.netlify.app" target="_blank">
+              <img
+                class="project-image"
+                src="./images/asteroidsgameproject-cropped-1000x563.png"
+                alt=""
+              />
+            </a>
+            <div class="project-content">
+              <h4 class="project-category project-category-primary">
+                Web Design
+              </h4>
+              <h2 class="project-title">Asteroid Game Project</h2>
+              <h4 class="project-involvement">Design & Development</h4>
+              <p class="project-description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
+                inventore voluptatem tempora illo soluta quo ut perferendis
+                minima, fuga dolorum.
+              </p>
+              <a
+                href="https://asteroidsgameproject.netlify.app"
+                target="_blank"
+              >
+                <button class="btn btn--primary">View Details</button>
+              </a>
+            </div>
+          </div>
+          <div class="project-group">
+            <a href="https://gamehubwebproject.netlify.app" target="_blank">
+              <img
+                class="project-image"
+                src="./images/gamehubwebproject-cropped-1000x563.png"
+                alt=""
+              />
+            </a>
+            <div class="project-content">
+              <h4 class="project-category project-category-primary">
+                Web Design
+              </h4>
+              <h2 class="project-title">Game Hub Project</h2>
+              <h4 class="project-involvement">Design & Development</h4>
+              <p class="project-description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
+                inventore voluptatem tempora illo soluta quo ut perferendis
+                minima, fuga dolorum.
+              </p>
+              <a href="https://gamehubwebproject.netlify.app" target="_blank">
+                <button class="btn btn--primary">View Details</button>
+              </a>
+            </div>
+          </div>
         </div>
-        <span class="project-arrow next-arrow">></span>
+        <span id="next-arrow" class="project-arrow next-arrow">></span>
       </div>
     </section>
     <section class="block skills" id="skills">
@@ -237,7 +301,7 @@
             <div class="slider-container">
               <div class="slider-info">
                 <label class="slider-label" for="html">HTML</label>
-                <output class="slider-output">85</output>
+                <output class="slider-output">90</output>
               </div>
               <input
                 class="slider slider--primary"
@@ -251,7 +315,7 @@
             <div class="slider-container">
               <div class="slider-info">
                 <label class="slider-label" for="css">CSS</label>
-                <output class="slider-output">85</output>
+                <output class="slider-output">90</output>
               </div>
               <input
                 class="slider slider--primary"
@@ -265,13 +329,13 @@
             <div class="slider-container">
               <div class="slider-info">
                 <label class="slider-label" for="javascript">JavaScript</label>
-                <output class="slider-output">50</output>
+                <output class="slider-output">85</output>
               </div>
               <input
                 class="slider slider--primary"
                 id="javascript"
                 type="range"
-                value="50"
+                value="85"
                 min="1"
                 max="100"
               />
@@ -279,13 +343,13 @@
             <div class="slider-container">
               <div class="slider-info">
                 <label class="slider-label" for="typescript">TypeScript</label>
-                <output class="slider-output">50</output>
+                <output class="slider-output">70</output>
               </div>
               <input
                 class="slider slider--primary"
                 id="typescript"
                 type="range"
-                value="50"
+                value="70"
                 min="1"
                 max="100"
               />
@@ -293,13 +357,13 @@
             <div class="slider-container">
               <div class="slider-info">
                 <label class="slider-label" for="react">React</label>
-                <output class="slider-output">50</output>
+                <output class="slider-output">70</output>
               </div>
               <input
                 class="slider slider--primary"
                 id="react"
                 type="range"
-                value="50"
+                value="70"
                 min="1"
                 max="100"
               />
@@ -329,15 +393,15 @@
                 <p class="ring-label">Communication</p>
               </div>
               <div class="ring">
-                <p class="ring-percentage">65%</p>
+                <p class="ring-percentage">85%</p>
                 <p class="ring-label">Teamwork</p>
               </div>
               <div class="ring">
-                <p class="ring-percentage">85%</p>
+                <p class="ring-percentage">90%</p>
                 <p class="ring-label">Problem-Solving</p>
               </div>
               <div class="ring">
-                <p class="ring-percentage">60%</p>
+                <p class="ring-percentage">75%</p>
                 <p class="ring-label">Creativity</p>
               </div>
             </div>

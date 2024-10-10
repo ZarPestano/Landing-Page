@@ -580,20 +580,32 @@ a:focus {
   margin-bottom: 4rem;
 }
 
-.project-container {
-  /* display: flex;
-  justify-content: space-between; */
-  display: inline;
-}
-
 .project-grid {
   grid-template-columns: max-content 1fr max-content;
   grid-template-rows: 1fr max-content;
   height: max-content;
 }
 
-.project-content {
-  grid-column: 1 / -1;
+.project-container {
+  position: relative;
+}
+
+.project-group {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+  pointer-events: none;
+}
+
+.project-active {
+  position: static;
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+  pointer-events: all;
 }
 
 .project-arrow {
@@ -617,6 +629,11 @@ a:focus {
 .next-arrow {
   grid-column: 3;
   margin-left: 2rem;
+}
+
+.project-content {
+  grid-column: 1 / -1;
+  width: 100%;
 }
 
 .project-image {
@@ -652,18 +669,17 @@ a:focus {
 
 @media screen and (min-width: 1024px) {
   .project-grid {
-    grid-template-columns: max-content 1fr 1fr max-content;
+    grid-template-columns: max-content 1fr max-content;
     grid-template-rows: max-content;
   }
 
   .project-content {
     margin-top: 0;
     margin-left: 2rem;
-    grid-column: 3;
   }
 
-  .next-arrow {
-    grid-column: -1;
+  .project-group {
+    flex-direction: row;
   }
 }
 
