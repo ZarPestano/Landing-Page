@@ -1,8 +1,8 @@
 /* COLORS - GLOBAL VARIABLES */
 :root {
   --primary-color: #49cae4;
-  --secondary-color: #0096c7;
-  --accent-color: #ade8f4;
+  --secondary-color: #ade8f4;
+  --accent-color: #0096c7;
 
   --background-color: #222;
 
@@ -12,8 +12,8 @@
 }
 
 *,
-**before,
-**after {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -77,6 +77,10 @@ p {
 
 .heading--secondary {
   color: var(--secondary-color);
+}
+
+.heading--accent {
+  color: var(--accent-color);
 }
 
 @media screen and (min-width: 1024px) {
@@ -394,10 +398,6 @@ a:focus {
   transform: scale(1.05);
 }
 
-.project-category-primary {
-  color: var(--primary-color);
-}
-
 .project-category {
   margin-top: 1rem;
 }
@@ -406,9 +406,9 @@ a:focus {
   margin: 1.5rem 0;
 }
 
-.project-involvement {
+.project-technology,
+.project-library {
   margin-top: 0;
-  color: var(--accent-color);
 }
 
 @media screen and (min-width: 1024px) {

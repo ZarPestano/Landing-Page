@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Zar's Landing Page" />
-    <meta property="og:title" content="Zar's Landing Page" />
+    <meta name="description" content="Zar's Portfolio" />
+    <meta property="og:title" content="Zar's Portfolio" />
     <meta
       property="og:description"
       content="Click here to see more of my content..."
@@ -20,173 +20,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script defer src="js/script.js"></script>
+    <script type="module" src="js/router.js"></script>
   </head>
   <body>
-    <section class="block navbar">
-      <ul class="navbar__list list list--inline">
-        <li class="navbar__item list__item">
-          <a href="/">Home</a>
-        </li>
-        <li class="navbar__item list__item">
-          <a href="#projects">Projects</a>
-        </li>
-      </ul>
-    </section>
-    <section class="block about" id="about" >
-        <div class="about-content" >
-          <h2 class="about-heading">About Me</h2>
-          <div class="about-grid grid grid--1x2">
-            <img class="about-image" src="/images/profilePicture.jpg" alt="My Profile Picture"/>
-            <div class="about-description" data-aos="fade-left">
-              <p >
-                Hello! I'm Eleazar - though most people know me as Zar. 
-                With a background in mechanical engineering, I discovered my love for programming during my studies at BCIT and while working in the field. 
-                From automating mechanical systems to creating simulations in Maple 15, Visual Basic, MATLAB, LabVIEW and C, I was always drawn to problem-solving through code. 
-                My passion for web development was sparked when friends in software development introduced me to the world of building interactive and dynamic applications 
-                - turning simple lines of code into something impactful felt like magic.
-              </p>
-              <p>
-                My goal is to become a full-stack software developer and explore the endless possibilities the world of software development has to offer. 
-                I'm excited to continue learning and pushing my skills further.
-              </p>
-              <p>
-                When I'm not coding, you can find me exploring the outdoors through hiking, weightlifting at the gym, hitting the slopes snowboarding, or playing sports like basketball, volleyball and badminton. 
-                I'm also a fan of video games and can often be caught belting out karaoke tunes at Filipino parties or soundproof karaoke rooms.
-              </p>
-            </div>
-          </div>
-          <ul class="about-badges list list--inline" data-aos="fade-in">
-              <li class="about-list-item list__item">
-                <span class="about-badge badge badge--primary">HTML</span>
-              </li>
-              <li class="about-list-item list__item">
-                <span class="about-badge badge badge--primary">CSS</span>
-              </li>
-              <li class="about-list-item list__item">
-                <span class="about-badge badge badge--primary">JavaScript</span>
-              </li>
-              <li class="about-list-item list__item">
-                <span class="about-badge badge badge--primary">TypeScript</span>
-              </li>
-          </ul>
-            <ul class="about-badges list list--inline" data-aos="fade-in">
-              <li class="about-list-item list__item">
-                <span class="about-badge badge badge--primary">React</span>
-              </li>
-              <li class="about-list-item list__item">
-                <span class="about-badge badge badge--primary">Chakra-UI</span>
-              </li>
-            </ul>
-            <ul class="about-badges list list--inline" data-aos="fade-in">
-              <li class="about-list-item list__item">
-                <span class="about-badge badge badge--primary">Git</span>
-              </li>
-              <li class="about-list-item list__item">
-                <span class="about-badge badge badge--primary">Axios</span>
-              </li>
-              <li class="about-list-item list__item">
-                <span class="about-badge badge badge--primary">React-Query</span>
-              </li>
-              <li class="about-list-item list__item">
-                <span class="about-badge badge badge--primary">Zustand</span>
-              </li>
-              <li class="about-list-item list__item">
-                <span class="about-badge badge badge--primary">React-Router</span>
-              </li>
-            </ul>
-        </div>
-    </section>
-    <section class="block projects" id="projects" data-aos="fade-down">
-      <h2 class="projects-heading">Projects</h2>
-      <div class="project-grid grid">
-          <div class="project-group">
-            <a href="https://moshifywebproject.netlify.app/" target="_blank">
-              <img
-                class="project-image"
-                src="./images/moshifywebproject-cropped-1000x563.png"
-                alt=""
-              />
-            </a>
-            <div class="project-content">
-              <h2 class="project-title">Moshified</h2>
-              <h4 class="project-category project-category-primary">
-                Category: Front-End
-              </h4>
-              <h4 class="project-involvement">
-                Technology: HTML, CSS
-              </h4>
-              <p class="project-description">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
-                inventore voluptatem tempora illo soluta quo ut perferendis
-                minima, fuga dolorum.
-              </p>
-              <a href="https://moshifywebproject.netlify.app/" target="_blank">
-                <button class="btn btn--primary">View Details</button>
-              </a>
-            </div>
-          </div>
-          <div class="project-group">
-            <a href="https://asteroidsgameproject.netlify.app" target="_blank">
-              <img
-                class="project-image"
-                src="./images/asteroidsgameproject-cropped-1000x563.png"
-                alt=""
-              />
-            </a>
-            <div class="project-content">
-              <h2 class="project-title">Asteroids Game</h2>
-              <h4 class="project-category project-category-primary">
-                Category: Front-End
-              </h4>
-              <h4 class="project-involvement">
-                Technology: JavaScript
-              </h4>
-              <p class="project-description">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
-                inventore voluptatem tempora illo soluta quo ut perferendis
-                minima, fuga dolorum.
-              </p>
-              <a
-                href="https://asteroidsgameproject.netlify.app"
-                target="_blank"
-              >
-                <button class="btn btn--primary">View Details</button>
-              </a>
-            </div>
-          </div>
-          <div class="project-group">
-            <a href="https://gamehubwebproject.netlify.app" target="_blank">
-              <img
-                class="project-image"
-                src="./images/gamehubwebproject-cropped-1000x563.png"
-                alt=""
-              />
-            </a>
-            <div class="project-content">
-              <h2 class="project-title">Game Hub</h2>
-              <h4 class="project-category project-category-primary">
-                Category: Full-Stack
-              </h4>
-              <h4 class="project-involvement">
-                Technology: React, React-Query
-              </h4>
-              <p class="project-description">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
-                inventore voluptatem tempora illo soluta quo ut perferendis
-                minima, fuga dolorum.
-              </p>
-              <a href="https://gamehubwebproject.netlify.app" target="_blank">
-                <button class="btn btn--primary">View Details</button>
-              </a>
-            </div>
-          </div>
-      </div>
-    </section>
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script>
-        AOS.init();
-      </script>
-    </section>
+    <div id="app"></div>
+    <script type="module" src="/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
