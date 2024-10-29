@@ -10,6 +10,5 @@ document.querySelector("#app").innerHTML = `
             <a href="/projects" onclick="route()">Projects</a>
           </li>
         </ul>
-      </section>
-      <div id="page-content"></div>
+  </section>
 `;
