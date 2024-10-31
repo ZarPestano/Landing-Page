@@ -6,11 +6,13 @@ export default {
     {
       id: 1,
       name: "Moshified Cloud Hosting",
+      slug: "moshified-cloud-hosting",
       category: "Front-End",
       technology: ["HTML", "CSS", "JavaScript"],
       library: ["AOS"],
       image: "../images/moshifywebproject-cropped-1000x563.png",
       link: "https://moshifywebproject.netlify.app/",
+      gitLink: "https://github.com/ZarPestano/MoshifyWeb.git",
       description:
         "A mobile-first, fully responsive cloud hosting website designed to deliver a seamless user experience across\
          all devices. Built with HTML and CSS, the site incorporates media queries for optimized viewing at different\
@@ -22,11 +24,13 @@ export default {
     {
       id: 2,
       name: "Asteroids Game Recreation",
+      slug: "asteroids-game-recreation",
       category: "Front-End",
       technology: ["JavaScript"],
       library: ["n/a"],
       image: "../images/asteroidsgameproject-cropped-1000x563.png",
       link: "https://asteroidsgameproject.netlify.app",
+      gitLink: "https://github.com/ZarPestano/AsteroidsGame.git",
       description:
         "A modern web-based recreation of the classic 1979 Asteroids arcade game by Atari Inc., blending nostalgic\
          gameplay with updated browser based technologies. This project was built to be both accessible and enjoyable,\
@@ -38,11 +42,13 @@ export default {
     {
       id: 3,
       name: "GameHub",
+      slug: "gamehub",
       category: "Full-Stack",
       technology: ["React", "TypeScript"],
       library: ["Chakra-UI", "Axios", "React-Query", "Zustand", "React-Router"],
       image: "../images/gamehubwebproject-cropped-1000x563.png",
       link: "https://gamehubwebproject.netlify.app",
+      gitLink: "https://github.com/ZarPestano/GameHub.git",
       description:
         "A GameHub is a modern video game discovery web application designer for effortless exploration of gaming\
          content through a sleek, responsive interface. Powered by React, this project pulls real-time data from an online\

@@ -1,10 +1,13 @@
 import TemplatePage from "./TemplatePage.js";
 import ProjectsData from "../public/data/projects.js";
+import shortenText from "../tools/shortenText.js";
 
 const projectContent = (project) => {
+  let maxCharLength = 150;
+
   return `
-  <div class="project-group">
-    <a href="${project.link}" target="_blank">
+  <div class="project-group card">
+    <a href="/projects/${project.id}" onclick="route()">
        <img
        class="project-image"
        src="${project.image}";
@@ -21,8 +24,11 @@ const projectContent = (project) => {
            ", "
          )}
       </h4>
-      <p class="project-description">${project.description}</p>
-      <a href="${project.link}" target="_blank">
+      <p class="project-description">${shortenText(
+        project.description,
+        maxCharLength
+      )}</p>
+      <a href="/projects/${project.id}" onclick="route()">
         <button class="btn btn--primary">View Details</button>
       </a>
     </div>
