@@ -12,3 +12,6 @@ document.querySelector("#nav").innerHTML = `
         </ul>
   </section>
 `;
+
+// document.querySelector("#footer").innerHTML = `
+// `;
