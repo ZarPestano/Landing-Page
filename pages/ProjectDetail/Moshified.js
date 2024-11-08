@@ -1,4 +1,4 @@
-import ProjectData from "../../public/data/projects.js";
+import ProjectData from "../../assets/data/projects.js";
 import ProjectDetailPage from "./ProjectDetailPage";
 
 // export default new ProjectDetailPage(ProjectData.results[0]);

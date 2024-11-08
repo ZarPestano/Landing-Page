@@ -6,7 +6,7 @@ const projectContent = (project) => {
     <img
     class="project-image"
     src="${project.image}";
-    alt=""
+    alt="Cover page of project ${project.name}"
      />
     <div class="project-content card">
       <h2 class="project-title">${project.name}</h2>

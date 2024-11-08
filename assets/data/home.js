@@ -1,6 +1,8 @@
+import ProfilePicture from "../images/profilePicture.jpg";
+
 export default {
   title: "About Me",
-  image: "../images/profilePicture.jpg",
+  image: ProfilePicture,
   technologies: ["HTML", "CSS", "JavaScript", "TypeScript"],
   libraries: ["React", "Chakra-UI"],
   miscTechnologies: [
@@ -8,7 +10,7 @@ export default {
     "Zustand",
     "React-Router",
     "Axios",
-    "Git/GitHub",
+    "Git/GitHub"
   ],
   description: [
     "Hello! I'm Eleazar - though most people know me as Zar. With a\
@@ -29,6 +31,6 @@ export default {
     hiking, weightlifting at the gym, hitting the slopes snowboarding, or\
     playing sports like basketball, volleyball and badminton. I'm also a\
     fan of video games and can often be caught belting out karaoke tunes\
-    at Filipino parties or soundproof karaoke rooms.",
-  ],
+    at Filipino parties or soundproof karaoke rooms."
+  ]
 };

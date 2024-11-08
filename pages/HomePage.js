@@ -1,5 +1,5 @@
 import TemplatePage from "./TemplatePage.js";
-import HomeData from "../public/data/home.js";
+import HomeData from "../assets/data/home.js";
 
 export default class extends TemplatePage {
   async getHTML() {

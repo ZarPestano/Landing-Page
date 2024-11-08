@@ -4,64 +4,78 @@ import ProjectsPage from "../pages/ProjectsPage.js";
 import MoshifiedPage from "../pages/ProjectDetail/Moshified.js";
 import AsteroidsPage from "../pages/ProjectDetail/Asteroids.js";
 import GameHubPage from "../pages/ProjectDetail/GameHub.js";
-import ProjectData from "../public/data/projects.js";
+
+import setActiveNav from "../tools/activeNav.js";
 
 const pageTitle = "Portfolio";
 
-const routes = {
+export const routes = {
   404: {
-    view: ErrorPage,
+    page: ErrorPage,
+    navItem: null,
     path: "../pages/ErrorPage.js",
     title: "404 | " + pageTitle,
-    description: "Page Not Found",
+    description: "Page Not Found"
   },
 
   "/": {
-    view: HomePage,
+    page: HomePage,
+    navItem: 0,
     path: "../pages/HomePage.js",
     title: "Home | " + pageTitle,
-    description: "Home Page of Zar's Portfolio",
+    description: "Home Page of Zar's Portfolio"
   },
 
   "/projects": {
-    view: ProjectsPage,
+    page: ProjectsPage,
+    navItem: 1,
     path: "../pages/ProjectsPage.js",
     title: "Projects | " + pageTitle,
-    description: "Project Page of Zar's Portfolio",
+    description: "Project Page of Zar's Portfolio"
   },
 
   "/projects/1": {
-    view: MoshifiedPage,
+    page: MoshifiedPage,
+    navItem: 1,
     path: "../pages/ProjectDetail/Moshified.js",
     title: "Moshified | " + pageTitle,
-    description: "Moshified Cloud Hosting Detail Page",
+    description: "Moshified Cloud Hosting Detail Page"
   },
 
   "/projects/2": {
-    view: AsteroidsPage,
+    page: AsteroidsPage,
+    navItem: 1,
     path: "../pages/ProjectDetail/Asteroids.js",
     title: "Asteroids | " + pageTitle,
-    description: "Asteroid Game Detail Page",
+    description: "Asteroid Game Detail Page"
   },
 
   "/projects/3": {
-    view: GameHubPage,
+    page: GameHubPage,
+    navItem: 1,
     path: "../pages/ProjectDetail/GameHub.js",
     title: "GameHub | " + pageTitle,
-    description: "GameHub Detail Page",
-  },
+    description: "GameHub Detail Page"
+  }
 };
 
 document.addEventListener("click", (e) => {
+  console.log();
   if (
-    !e.target.matches("navbar__item a") ||
-    !e.target.matches("project-group a")
+    !(
+      e.target.matches(".navbar__item") ||
+      e.target.matches(".project-group img") ||
+      e.target.matches(".project-group button")
+    ) ||
+    e.target.matches(".project-detail img") ||
+    e.target.matches(".project-detail button")
   ) {
     return;
   }
 
   e.preventDefault();
   route();
+  setActiveNav(routes);
 });
 
 const route = (event) => {
@@ -76,8 +90,11 @@ const handleLocation = async () => {
   if (location.length == 0) location = "/";
 
   const route = routes[location] || routes[404];
-  const html = new route.view();
+  const html = new route.page();
+
   document.getElementById("page-content").innerHTML = await html.getHTML();
+  html.activateFeatures();
+
   document.title = route.title;
   document
     .querySelector('meta[name="description"]')
@@ -88,3 +105,4 @@ window.onpopstate = handleLocation;
 window.route = route;
 
 handleLocation();
+setActiveNav(routes);
