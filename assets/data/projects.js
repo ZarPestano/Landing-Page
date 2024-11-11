@@ -9,7 +9,7 @@ export default {
       id: 1,
       name: "Moshified Cloud Hosting",
       slug: "moshified-cloud-hosting",
-      category: "Front-End",
+      category: ["Front-End"],
       technology: ["HTML", "CSS", "JavaScript"],
       library: ["AOS"],
       image: MoshifyImage,
@@ -21,13 +21,13 @@ export default {
          screen widths. Scroll animations are powered by the AOS scroll library, enhancing engagement and providing\
          dynamic visual cues. JavaScript is used to implement collapsible menus, ensuring intuitive navigation on smaller\
          screens. Moshified effectively balances design and functionality, creating an engaging experience for users\
-         exploring cloud hosting solutions."
+         exploring cloud hosting solutions.",
     },
     {
       id: 2,
       name: "Asteroids Game Recreation",
       slug: "asteroids-game-recreation",
-      category: "Front-End",
+      category: ["Front-End"],
       technology: ["JavaScript"],
       library: ["n/a"],
       image: AsteroidImage,
@@ -39,13 +39,13 @@ export default {
          with intuitive controls for a seamless user experience. Players navigate with arrow keys and fire with the\
          space bar to challenge the high score, combining simple mechanics with dynamic visuals. The game highlights\
          programming skills in JavaScript, demonstrating interactive functionaility and real-time user feedback through\
-         score-tracking and responsive controls."
+         score-tracking and responsive controls.",
     },
     {
       id: 3,
       name: "GameHub",
       slug: "gamehub",
-      category: "Full-Stack",
+      category: ["Full-Stack"],
       technology: ["React", "TypeScript"],
       library: ["Chakra-UI", "Axios", "React-Query", "Zustand", "React-Router"],
       image: GameHubImage,
@@ -58,7 +58,7 @@ export default {
          visually-appealing layout and uses React-Query and Axios to efficiently manage server-side data. Client state\
          management is streamlined with Zustand, while React-Router enables smooth, intuitive navigation. This project\
          demonstrates expertise in building efficient interactive applications that enhance the user experience through\
-         a sophisticated, modular technology stack."
-    }
-  ]
+         a sophisticated, modular technology stack.",
+    },
+  ],
 };

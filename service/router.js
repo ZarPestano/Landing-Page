@@ -1,6 +1,6 @@
 import ErrorPage from "../pages/ErrorPage.js";
 import HomePage from "../pages/HomePage.js";
-import ProjectsPage from "../pages/ProjectsPage.js";
+import ProjectsPage from "../pages/Project/ProjectsPage.js";
 import MoshifiedPage from "../pages/ProjectDetail/Moshified.js";
 import AsteroidsPage from "../pages/ProjectDetail/Asteroids.js";
 import GameHubPage from "../pages/ProjectDetail/GameHub.js";
@@ -15,7 +15,7 @@ export const routes = {
     navItem: null,
     path: "../pages/ErrorPage.js",
     title: "404 | " + pageTitle,
-    description: "Page Not Found"
+    description: "Page Not Found",
   },
 
   "/": {
@@ -23,15 +23,15 @@ export const routes = {
     navItem: 0,
     path: "../pages/HomePage.js",
     title: "Home | " + pageTitle,
-    description: "Home Page of Zar's Portfolio"
+    description: "Home Page of Zar's Portfolio",
   },
 
   "/projects": {
     page: ProjectsPage,
     navItem: 1,
-    path: "../pages/ProjectsPage.js",
+    path: "../pages/Project/ProjectsPage.js",
     title: "Projects | " + pageTitle,
-    description: "Project Page of Zar's Portfolio"
+    description: "Project Page of Zar's Portfolio",
   },
 
   "/projects/1": {
@@ -39,7 +39,7 @@ export const routes = {
     navItem: 1,
     path: "../pages/ProjectDetail/Moshified.js",
     title: "Moshified | " + pageTitle,
-    description: "Moshified Cloud Hosting Detail Page"
+    description: "Moshified Cloud Hosting Detail Page",
   },
 
   "/projects/2": {
@@ -47,7 +47,7 @@ export const routes = {
     navItem: 1,
     path: "../pages/ProjectDetail/Asteroids.js",
     title: "Asteroids | " + pageTitle,
-    description: "Asteroid Game Detail Page"
+    description: "Asteroid Game Detail Page",
   },
 
   "/projects/3": {
@@ -55,8 +55,8 @@ export const routes = {
     navItem: 1,
     path: "../pages/ProjectDetail/GameHub.js",
     title: "GameHub | " + pageTitle,
-    description: "GameHub Detail Page"
-  }
+    description: "GameHub Detail Page",
+  },
 };
 
 document.addEventListener("click", (e) => {
@@ -85,13 +85,16 @@ const route = (event) => {
   handleLocation();
 };
 
-const handleLocation = async () => {
+export const getCurrentRoute = () => {
   var location = window.location.pathname;
   if (location.length == 0) location = "/";
+  return routes[location] || routes[404];
+};
 
-  const route = routes[location] || routes[404];
+const handleLocation = async () => {
+  const route = getCurrentRoute();
+
   const html = new route.page();
-
   document.getElementById("page-content").innerHTML = await html.getHTML();
   html.activateFeatures();
 

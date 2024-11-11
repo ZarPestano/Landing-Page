@@ -402,7 +402,7 @@ a:focus {
 
 .project-grid {
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: repeat(auto, 1fr);
 }
 
 .project-group {
@@ -447,11 +447,6 @@ a:focus {
 }
 
 @media screen and (min-width: 1024px) {
-  .project-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-  }
-
   .project-content {
     margin-top: 0;
     margin-left: 2rem;
