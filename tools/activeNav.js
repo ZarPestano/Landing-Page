@@ -1,6 +1,6 @@
 import { getCurrentRoute } from "../service/router";
 
-export default function setActiveNav(routes) {
+export default function setActiveNav() {
   const route = getCurrentRoute();
 
   let navItems = document.querySelectorAll(".navbar__item");

@@ -1,7 +1,11 @@
 export default class {
   constructor() {}
 
-  async getHTML() {
+  getHTML() {
+    return "";
+  }
+
+  getSideBar() {
     return "";
   }
 

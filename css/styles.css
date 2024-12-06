@@ -578,6 +578,11 @@ a:focus {
   transition: color 0.2s ease-in-out;
 }
 
+.sidebar__item--active {
+  color: white;
+  text-decoration: underline;
+}
+
 .sidebar__item:hover,
 .sidebar__item:focus {
   color: white;
