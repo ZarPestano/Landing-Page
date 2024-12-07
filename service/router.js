@@ -34,7 +34,7 @@ export const getCurrentRoute = () => {
   return routes[location] || routes[404];
 };
 
-export const getCurrentPage = async (route, projects = undefined) => {
+export const getCurrentPage = async (route, projects) => {
   const html = new route.page();
   document.getElementById("main-content").innerHTML = await html.getHTML(
     projects
