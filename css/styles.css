@@ -38,6 +38,15 @@ body {
   min-height: 100vh;
 }
 
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  min-height: calc(100vh - var(--navbar-height) * 1px);
+}
+
 h1,
 h2,
 h3,
@@ -271,6 +280,7 @@ a:focus {
   width: 100%;
   max-width: 100vw;
   z-index: 1;
+  min-height: 0;
 }
 
 .navbar__list {
@@ -616,8 +626,13 @@ a:focus {
 
 /* FOOTER */
 
+#footer {
+  display: absolute;
+  bottom: 0;
+}
+
 .footer-container {
-  display: relative;
+  display: absolute;
   bottom: 0;
   max-width: 100vw;
   width: 100%;
@@ -633,6 +648,8 @@ a:focus {
 
 .block.footer {
   margin-bottom: 0;
+  min-height: 0;
+  height: 100%;
 }
 
 .footer-description {
@@ -656,7 +673,7 @@ a:focus {
   margin: 0 auto;
   margin-bottom: 5rem;
   padding-top: 2rem;
-  height: 100%;
+  min-height: 100%;
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -667,11 +684,6 @@ a:focus {
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
-}
-
-.content-container {
-  position: relative;
-  z-index: 1;
 }
 
 /* ANIMATIONS */
