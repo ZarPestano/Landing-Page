@@ -19,7 +19,6 @@ export default function setFilters() {
   let categories = getFilters(categoriesList);
   let technologies = getFilters(technologiesList);
   let libraries = getFilters(librariesList);
-  console.log(categories);
 
   enableFilter(categories, "category");
   enableFilter(technologies, "technology");
@@ -35,7 +34,7 @@ function disableFilter(filters, filterType) {
     filter.children[1].addEventListener("click", async () => {
       toggleActiveNav(filter);
       let dFIndex = activeFilters[filterType].indexOf(filterName(filter));
-      const deletedFilter = activeFilters[filterType].splice(dFIndex, 1)[0];
+      activeFilters[filterType].splice(dFIndex, 1)[0];
 
       const toBeDeletedIndex = [];
       for (const p of filteredProjects) {
@@ -43,13 +42,9 @@ function disableFilter(filters, filterType) {
 
         let index = filteredProjects.indexOf(p);
         toBeDeletedIndex.unshift(index);
-        console.log(p["name"]);
       }
 
-      for (const i of toBeDeletedIndex) {
-        filteredProjects.splice(i, 1);
-      }
-      console.log(filteredProjects);
+      for (const i of toBeDeletedIndex) filteredProjects.splice(i, 1);
 
       getCurrentPage(
         getCurrentRoute(),
@@ -104,11 +99,8 @@ function enableFilter(filters, filterType) {
 const isActiveProject = (project) => {
   let flatActiveFilters = [];
   if (hasActiveFilter())
-    for (const aF of Object.values(activeFilters)) {
+    for (const aF of Object.values(activeFilters))
       flatActiveFilters = [...flatActiveFilters, ...aF];
-    }
-
-  console.log("Active Filters: " + flatActiveFilters);
 
   for (const rF of flatActiveFilters)
     if (
