@@ -66,11 +66,17 @@ function enableFilter(filters, filterType) {
           );
         }
 
-        const newFilteredProjects = projects.filter((project) =>
-          project[filterType].includes(addedFilter)
-        );
-        for (const p of newFilteredProjects)
-          if (!filteredProjects.includes(p)) filteredProjects.push(p);
+        // FIXME: Fix filter when no filteredProjects and there are active filters
+        // FIXME: Possible solution: redo filter where filters is performed in series
+        // FIXME: i.e. categories -> technology -> library
+        if (hasActiveFilter() && !isEmpty(activeFilters[filterType])) {
+          const newFilteredProjects = projects.filter((project) =>
+            project[filterType].includes(addedFilter)
+          );
+
+          for (const p of newFilteredProjects)
+            if (!filteredProjects.includes(p)) filteredProjects.push(p);
+        }
       }
 
       if (hasActiveFilter() && !isEmpty(activeFilters[filterType])) {
